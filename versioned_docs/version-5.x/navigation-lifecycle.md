@@ -22,6 +22,10 @@ Similar results can be observed (in combination) with other navigators as well. 
 
 ```jsx
 function App() {
+  useEffect(() => {
+    //navigationRef.current.getCurrentRoute().name; -> Getting the initial screen name
+  }, []);
+
   return (
     <NavigationContainer>
       <Tab.Navigator>
